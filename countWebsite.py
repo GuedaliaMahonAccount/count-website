@@ -3,8 +3,8 @@ import pandas as pd
 # Load the Excel files
 file1 = 'Suspected.xlsx'
 file2 = 'Diagnosed.xlsx'
-file3 = 'normalCounted1.xlsx'
-file4 = 'normalCounted2.xlsx'
+file3 = 'Normal1.xlsx'
+file4 = 'Normal2.xlsx'
 
 # Read the Excel files into DataFrames
 df1 = pd.read_excel(file1, engine='openpyxl')
@@ -48,17 +48,17 @@ def analyze_websites(df):
 
 
 # Analyze the first file
-print("Analysis of suspectCounted.xlsx:")
+print("Analysis of Suspected.xlsx:")
 analyze_websites(df1)
 
 # Analyze the second file
-print("Analysis of sureCounted.xlsx:")
+print("Analysis of Diagnosed.xlsx:")
 analyze_websites(df2)
 
 # Analyze the third file
-print("Analysis of normalCounted1.xlsx:")
+print("Analysis of Normal1.xlsx:")
 analyze_websites(df3)
 
 # Analyze the for file
-print("Analysis of normalCounted2.xlsx:")
+print("Analysis of Normal2.xlsx:")
 analyze_websites(df4)
